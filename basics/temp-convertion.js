@@ -7,7 +7,6 @@ let tempKelvin;
 //°F = °C × 1, 8 + 32
 tempCelsius = 50;
 tempFahrenhei = tempCelsius * 1.8 + 32;
-
 console.log(tempCelsius + '°C = ' + tempFahrenhei + '°F');
 
 //Converter Fahrenheit em graus Celsius
