@@ -18,12 +18,20 @@ console.log('Value: ' + value);
 console.log('Other value: ' + otherValue);
 
 let getScoreText = function (name = 'Anonymous', score = 0) {
-    console.log('Name: ' + name);
-    console.log('Score: ' + score);
+    return 'Name: ' + name + ' - Score: ' + score;
 };
 
-getScoreText('Hector', 50);
-getScoreText(100); // 100 was received as first argument
-getScoreText(undefined, 35);
-getScoreText('John');
-getScoreText('Mary', undefined);
+let scoreText = getScoreText('Hector', 50);
+console.log(scoreText);
+
+scoreText = getScoreText(100); // 100 was received as first argument
+console.log(scoreText);
+
+scoreText = getScoreText(undefined, 35);
+console.log(scoreText);
+
+scoreText = getScoreText('John');
+console.log(scoreText);
+
+scoreText = getScoreText('Mary', undefined);
+console.log(scoreText);
