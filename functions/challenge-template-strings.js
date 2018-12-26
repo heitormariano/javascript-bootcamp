@@ -15,5 +15,5 @@ console.log(resultOne);
 let resultTwo = getTipTwo(2450, .5);
 console.log(resultTwo);
 
-let result = getAverageScore(7.5, 9);
-console.log(result);
+let averageScore = getAverageScore(7.5, 9);
+console.log(averageScore);
