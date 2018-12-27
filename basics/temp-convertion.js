@@ -1,19 +1,19 @@
 //Conversões de temperatura
 let tempCelsius;
-let tempFahrenhei;
+let tempFahrenheit;
 let tempKelvin;
 
 //Converter Celsius em graus Fahrenhei
 //°F = °C × 1, 8 + 32
 tempCelsius = 50;
-tempFahrenhei = tempCelsius * 1.8 + 32;
-console.log(tempCelsius + '°C = ' + tempFahrenhei + '°F');
+tempFahrenheit = tempCelsius * 1.8 + 32;
+console.log(tempCelsius + '°C = ' + tempFahrenheit + '°F');
 
 //Converter Fahrenheit em graus Celsius
 //°C = (°F − 32) ÷ 1, 8
-tempFahrenhei = 122;
-tempCelsius = (tempFahrenhei - 32) / 1.8;
-console.log(tempFahrenhei + '°F = ' + tempCelsius + '°C');
+tempFahrenheit = 122;
+tempCelsius = (tempFahrenheit - 32) / 1.8;
+console.log(tempFahrenheit + '°F = ' + tempCelsius + '°C');
 
 
 //Converter graus Celsius em Kelvin
@@ -30,12 +30,12 @@ console.log(tempKelvin + 'K = ' + tempCelsius + '°C');
 
 //Converter Fahrenheit para Kelvin
 //T(K) = (T(°F) + 459.67)× 5/9
-tempFahrenhei = 321;
-tempKelvin = (tempFahrenhei + 459.67) * 5/9;
-console.log(tempFahrenhei + '°F = ' + tempKelvin + 'K');
+tempFahrenheit = 321;
+tempKelvin = (tempFahrenheit + 459.67) * 5/9;
+console.log(tempFahrenheit + '°F = ' + tempKelvin + 'K');
 
 //Converter Kelvin para Fahrenheit
 //T(°F) = T(K) × 9 / 5 - 459.67
 tempKelvin = 433.7;
-tempFahrenhei = tempKelvin * 9/5 - 459.67;
-console.log(tempKelvin + 'K = ' + tempFahrenhei + '°F');
+tempFahrenheit = tempKelvin * 9/5 - 459.67;
+console.log(tempKelvin + 'K = ' + tempFahrenheit + '°F');
