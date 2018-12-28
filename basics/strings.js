@@ -1,5 +1,5 @@
-let firstName = 'Heitor';
-let lastName = 'Camara';
-let fullName = firstName + ' ' + lastName;
+let firstName = 'Heitor'
+let lastName = 'Camara'
+let fullName = firstName + ' ' + lastName
 
-console.log(fullName);
+console.log(fullName)
