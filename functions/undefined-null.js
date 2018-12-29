@@ -11,19 +11,19 @@ let printValue = function (num) {
     console.log(num)
 }
 
-printValue() //undefined
+printValue(); //undefined
 
-let value = printValue()
-console.log('Value: ' + value) // undefined
+let value = printValue();
+console.log('Value: ' + value); // undefined
 
 let square = function (num) {
-    let result = num * num
-    console.log(result)
+    let result = num * num;
+    console.log(result);
 }
 
-square() //NaN
+square();; //NaN
 
-let age = 31
-age = null
+let age = 31;
+age = null;
 
-console.log('Age: ' + age)
+console.log('Age: ' + age);

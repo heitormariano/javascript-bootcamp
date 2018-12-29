@@ -4,67 +4,66 @@ let createStudent = function (name, score) {
     return {
         name: name,
         score: score
-    }
-}
+    };
+};
 
 let calcResult = function (name, score, totalScore) {
     // 90 - 100 (A), 80 - 89 (B), 70 - 79 (C), 60 - 69 (D), 0 - 59 (F)
-    let percent = score / totalScore * 100
-    let result
+    let percent = score / totalScore * 100;
+    let result;
     if (percent >= 90) { // A concept
-        result = 'A'
+        result = 'A';
     } else if (percent >= 80) { //B concept
-        result = 'B'
+        result = 'B';
     } else if (percent >= 70) { // C concept
-        result = 'C'
+        result = 'C';
     } else if (percent >= 60) { // D concept
-        result = 'D'
+        result = 'D';
     } else { //F concept
-        result = 'F'
+        result = 'F';
     }
 
-    return `The student ${name} got the following result: ${result}`
-}
+    return `The student ${name} got the following result: ${result}`;
+};
 
 let getScoreByStudent = function (student, totalScore) {
-    let name
-    let score
+    let name;
+    let score;
     if (student !== undefined || student !== null) {
         for (let prop in student) {
             if (student.hasOwnProperty(prop)) {
                 if (typeof (student[prop]) === 'string') {
-                    name = student[prop]
+                    name = student[prop];
                 } else if (typeof (student[prop]) === 'number') {
-                    score = student[prop]
-                    return calcResult(name, score, totalScore)
+                    score = student[prop];
+                    return calcResult(name, score, totalScore);
                 }
             }
         }
     } else {
-        return 'Student undefined or does not exist'
+        return 'Student undefined or does not exist';
     }
-
-}
+};
 
 let calcScore = function (students = [], totalScore) {
     if (students.length !== 0 || totalScore !== 0 || totalScore !== undefined) {
         for (let elem of students) {
-            console.log(getScoreByStudent(elem, totalScore))
+            console.log(getScoreByStudent(elem, totalScore));
         }
     } else {
-        console.log('List empty or total score does not defined')
+        console.log('List empty or total score does not defined');
     }
-}
+};
 
 //create several objects
-let marcos = createStudent('Marcos', 7)
-let andrea = createStudent('Andrea', 17)
-let mateus = createStudent('Mateus', 18)
-let maria = createStudent('Maria', 12)
+let marcos = createStudent('Marcos', 7);
+let andrea = createStudent('Andrea', 17);
+let mateus = createStudent('Mateus', 18);
+let maria = createStudent('Maria', 12);
 
 //Include the created objects in a list
-studentsList = [marcos, andrea, mateus, maria]
+studentsList = [marcos, andrea, mateus, maria];
 
 //calculate the score for each student (the total score needs to be defined)
 // Total score = 20
-calcScore(studentsList, 20)
+calcScore(studentsList, 20);

@@ -1,11 +1,11 @@
-let name = 'Heitor'
-let age = 28
+let name = 'Heitor';
+let age = 28;
 
-console.log(`Hey, my name is ${name}. I am ${age} years old`)
+console.log(`Hey, my name is ${name}. I am ${age} years old`);
 
 let getScoreTextTwo = function (name = 'Anonymous', score = 0) {
-    return `Name: ${name} - Score: ${score}`
-}
+    return `Name: ${name} - Score: ${score}`;
+};
 
-let scoreText = getScoreTextTwo('Heitor', 99)
-console.log(scoreText)
+let scoreText = getScoreTextTwo('Heitor', 99);
+console.log(scoreText);

@@ -3,40 +3,40 @@ let restaurant = {
     guestCapacity: 75,
     guestCount: 0,
     checkAvailability: function (partySize) {
-        let seatsLeft = this.guestCapacity - this.guestCount
-        return seatsLeft >= partySize
+        let seatsLeft = this.guestCapacity - this.guestCount;
+        return seatsLeft >= partySize;
     },
     seatParty: function (partySize) {
         if (this.checkAvailability(partySize)) {
-            this.guestCount = this.guestCount + partySize
-            return true
+            this.guestCount = this.guestCount + partySize;
+            return true;
         } else {
-            return false
+            return false;
         }
     },
     removeParty: function (partySize) {
         if (this.guestCount - partySize >= 0) {
-            this.guestCount = this.guestCount - partySize
-            return true
+            this.guestCount = this.guestCount - partySize;
+            return true;
         } else {
-            return false
+            return false;
         }
     }
-}
+};
 
-console.log(restaurant)
+console.log(restaurant);
 
-let addResult = restaurant.seatParty(70)
+let addResult = restaurant.seatParty(70);
 // Using conditional (ternary) operator
-console.log(addResult ? 'Seats added' : 'Seats not added')
+console.log(addResult ? 'Seats added' : 'Seats not added');
 
-let removeResult = restaurant.removeParty(20)
+let removeResult = restaurant.removeParty(20);
 // Using conditional (ternary) operator
-console.log(removeResult ? 'Seats removed' : 'Seats not removed')
+console.log(removeResult ? 'Seats removed' : 'Seats not removed');
 
 
-addResult = restaurant.seatParty(90)
-console.log(addResult ? 'Seats added' : 'Seats not added')
+addResult = restaurant.seatParty(90);
+console.log(addResult ? 'Seats added' : 'Seats not added');
 
-removeResult = restaurant.removeParty(300)
-console.log(removeResult ? 'Seats removed' : 'Seats not removed')
+removeResult = restaurant.removeParty(300);
+console.log(removeResult ? 'Seats removed' : 'Seats not removed');

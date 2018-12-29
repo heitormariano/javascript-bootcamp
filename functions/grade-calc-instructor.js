@@ -3,23 +3,23 @@
 // A 90-100, B 80-89, C 70-79, D 60-69, F 0-59
 
 let gradeCalc = function (score, totalScore) {
-    let percent = (score / totalScore) * 100
-    let letterGrade = ''
+    let percent = (score / totalScore) * 100;
+    let letterGrade = '';
 
     if (percent >= 90) {
-        letterGrade = 'A'
+        letterGrade = 'A';
     } else if (percent >= 80) {
-        letterGrade = 'B'
+        letterGrade = 'B';
     } else if (percent >= 70) {
-        letterGrade = 'C'
+        letterGrade = 'C';
     } else if (percent >= 60) {
-        letterGrade = 'D'
+        letterGrade = 'D';
     } else {
-        letterGrade = 'F'
+        letterGrade = 'F';
     }
 
-    return `You got a ${letterGrade} (${percent}%)!`
+    return `You got a ${letterGrade} (${percent}%)!`;
 }
 
-let result = gradeCalc(9, 20)
-console.log(result)
+let result = gradeCalc(9, 20);
+console.log(result);
