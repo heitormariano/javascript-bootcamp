@@ -36,10 +36,10 @@ let getScoreByStudent = function (student, totalScore) {
                     name = student[prop];
                 } else if (typeof (student[prop]) === 'number') {
                     score = student[prop];
-                    return calcResult(name, score, totalScore);
                 }
             }
         }
+        return calcResult(name, score, totalScore);
     } else {
         return 'Student undefined or does not exist';
     }
