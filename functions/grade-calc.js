@@ -29,29 +29,33 @@ let calcResult = function (name, score, totalScore) {
 let getScoreByStudent = function (student, totalScore) {
     let name;
     let score;
-    if (student !== undefined || student !== null) {
-        for (let prop in student) {
+    if (student !== undefined && student !== null) {
+        for (const prop in student) { //teste
             if (student.hasOwnProperty(prop)) {
                 if (typeof (student[prop]) === 'string') {
                     name = student[prop];
                 } else if (typeof (student[prop]) === 'number') {
                     score = student[prop];
+                    return calcResult(name, score, totalScore);
                 }
             }
         }
-        return calcResult(name, score, totalScore);
     } else {
         return 'Student undefined or does not exist';
     }
 };
 
 let calcScore = function (students = [], totalScore) {
-    if (students.length !== 0 || totalScore !== 0 || totalScore !== undefined) {
-        for (let elem of students) {
-            console.log(getScoreByStudent(elem, totalScore));
+    if (students !== null && students !== undefined && totalScore !== null && totalScore !== undefined) {
+        if (students.length !== 0 && totalScore !== 0) {
+            for (const elem of students) {
+                console.log(getScoreByStudent(elem, totalScore));
+            }
+        } else {
+            console.log('List empty or total score with value 0');
         }
     } else {
-        console.log('List empty or total score does not defined');
+        console.log('list or total score has not been defined');
     }
 };
 
