@@ -68,7 +68,7 @@ let mateus = createStudent('Mateus', 18);
 let maria = createStudent('Maria', 12);
 
 //Include the created objects in a list
-studentsList = [marcos, andrea, mateus, maria];
+const studentsList = [marcos, andrea, mateus, maria];
 
 //calculate the score for each student (the total score needs to be defined)
 // Total score = 20
