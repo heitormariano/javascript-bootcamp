@@ -38,16 +38,16 @@ const getScoreByStudent = function (student, totalScore) {
                     name = student[prop];
                 } else if (typeof (student[prop]) === 'number') {
                     score = student[prop];
-                    return calcResult(name, score, totalScore);
                 }
             }
         }
+        return calcResult(name, score, totalScore);
     } else {
         return 'Student undefined or does not exist';
     }
 };
 
-const calcScore = function (students = [], totalScore) {
+const calcScore = function (students, totalScore) {
     if (students !== null && students !== undefined && totalScore !== null && totalScore !== undefined) {
         if (students.length !== 0 && totalScore !== 0) {
             for (const elem of students) {
