@@ -12,8 +12,7 @@ const notesTwo = [{}, {
 }, {
     title: 'Office modification',
     body: 'Get a new seat'
-}
-];
+}];
 
 console.log(`Length: ${notesTwo.length}`);
 console.log(notesTwo);

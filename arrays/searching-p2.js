@@ -7,8 +7,7 @@ const notes = [{
 }, {
     title: 'Office modification',
     body: 'Get a new seat'
-}
-];
+}];
 
 const findNote = function (notes, noteTitle) {
     const index = notes.findIndex(function (note) {
@@ -34,4 +33,3 @@ console.log(note);
 
 note = findNoteTwo(notes, 'Other title');
 console.log(note);
-
