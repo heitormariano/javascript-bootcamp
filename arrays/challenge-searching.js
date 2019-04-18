@@ -13,6 +13,10 @@ const printElements = function (todo) {
     console.log(`Todo: ${todo.text}. Status: ${todo.completed ? 'Completed' : 'Not Completed'}`);
 };
 
+const viewList = function (todos) {
+    todos.length === 0 ? console.log('List is empty') : todos.forEach(printElements);
+}
+
 let todoOne, todoTwo, todoThree, todoFour, todofive;
 
 todoOne = { text: 'More time with God', completed: true };
@@ -24,9 +28,9 @@ todofive = { text: 'Learn Programming', completed: false };
 const todos = [todoOne, todoTwo, todoThree, todoFour, todofive];
 
 console.log('-- Before --');
-todos.forEach(printElements);
+viewList(todos);
 
-let elems = deleteTodo(todos, 'Learn Programming'); // elems is an array
+let elems = deleteTodo(todos, 'More time with God'); // elems is an array
 if (elems !== null && elems !== undefined && elems.length !== 0) {
     console.log('Element removed:');
     elems.forEach(printElements);
@@ -35,4 +39,4 @@ if (elems !== null && elems !== undefined && elems.length !== 0) {
 }
 
 console.log('-- Afeter --');
-todos.forEach(printElements);
+viewList(todos);
