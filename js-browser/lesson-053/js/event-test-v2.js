@@ -1,10 +1,18 @@
 const modifyUserName = function (idElem, value) {
     if (typeof (idElem) === 'string' && typeof (value) === 'string') {
         let elem = document.getElementById(idElem);
-        if (elem.firstChild.nodeValue == 'Tompson') {
-            elem.firstChild.nodeValue = value;
-        } else {
-            elem.firstChild.nodeValue = 'Tompson';
+        if (idElem == 'user-01') {
+            if (elem.firstChild.nodeValue == 'Tompson') {
+                elem.firstChild.nodeValue = value;
+            } else {
+                elem.firstChild.nodeValue = 'Tompson';
+            }
+        } else if (idElem == 'user-02') {
+            if (elem.firstChild.nodeValue == 'Richard') {
+                elem.firstChild.nodeValue = value;
+            } else {
+                elem.firstChild.nodeValue = 'Richard';
+            }
         }
     }
 };
