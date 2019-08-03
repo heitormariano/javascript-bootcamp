@@ -5,7 +5,7 @@ const todos = [{
     text: 'Read a new book',
     completed: false
 }, {
-    text: 'Clean badroom',
+    text: 'Clean bedroom',
     completed: true
 }, {
     text: 'Learn English',
@@ -14,5 +14,5 @@ const todos = [{
 
 const button = document.querySelector('button');
 button.addEventListener('click', function () {
-    console.log('Dis this work');
+    console.log('Did this work');
 });
