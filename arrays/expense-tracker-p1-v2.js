@@ -24,7 +24,7 @@ const createAccount = function (name) {
 
 // create a account object
 let heitor = createAccount('heitor');
-heitor.addExpense('coffe', 2);
+heitor.addExpense('coffee', 2);
 heitor.addExpense('food', 350);
 heitor.addExpense('gym', 85);
 heitor.addExpense('trips', 890);
