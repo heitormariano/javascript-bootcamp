@@ -1,5 +1,5 @@
-const createTodos = function () {
-    return [{
+const todos = [
+    {
         text: 'Go to the gym',
         completed: true
     }, {
@@ -12,6 +12,9 @@ const createTodos = function () {
         text: 'Learn English',
         completed: false
     }];
+
+const filters = {
+    searchText: ''
 };
 
 const removeParagraphs = function () {
@@ -20,19 +23,20 @@ const removeParagraphs = function () {
     });
 };
 
-const todos = createTodos();
-
-let filteredList = [];
-document.querySelector('#search-text').addEventListener('input', function (e) {
+const filterTodos = function (todos, filters) {
+    const filteredTodos = todos.filter(function (todo) {
+        return todo.text.toLowerCase().includes(filters.searchText.toLowerCase());
+    });
     removeParagraphs();
-    filteredList = todos.filter(function (todo) {
-        return todo.text.toLowerCase().includes(e.target.value.toLowerCase());
+    filteredTodos.forEach(function (elem) {
+        const paragraph = document.createElement('p');
+        paragraph.textContent = elem.text;
+        document.querySelector('body').appendChild(paragraph);
     });
-    filteredList.forEach(function (elem) {
-        const body = document.querySelector('body');
-        const p = document.createElement('p');
-        p.textContent = elem.text;
-        body.appendChild(p);
-    });
+};
+
+document.querySelector('#search-text').addEventListener('input', function (e) {
+    filters.searchText = e.target.value;
+    filterTodos(todos, filters);
 });
 
