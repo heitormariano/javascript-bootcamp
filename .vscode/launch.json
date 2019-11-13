@@ -7,13 +7,13 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Node - Launch Program",
+            "name": "Node",
             "program": "${file}"
         },
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Chrome - Launch file",
+            "name": "Chrome",
             "url": "http://localhost:8080/${relativeFile}",
             "webRoot": "${workspaceFolder}"
         }
