@@ -42,3 +42,9 @@ let num03 = 100;
 
 newResult = word03 === num03;
 console.log(newResult);
+
+let num04 = 25;
+let word04 = '25';
+
+console.log("Uso do operador ==");
+console.log("25(numero) é igual a 25(String)? " + (num04 == word04));
