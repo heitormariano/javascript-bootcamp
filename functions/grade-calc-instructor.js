@@ -19,7 +19,7 @@ let gradeCalc = function (score, totalScore) {
     }
 
     return `You got a ${letterGrade} (${percent}%)!`;
-}
+};
 
 let result = gradeCalc(9, 20);
 console.log(result);

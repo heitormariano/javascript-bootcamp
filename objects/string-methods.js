@@ -27,7 +27,7 @@ console.log(stringWithSpaces.trim());
 console.log(stringWithSpaces);
 
 let wordOne, wordTwo;
-wordOne = 'Let\'s';
+wordOne = "Let's";
 wordTwo = ' go!';
 
 console.log(wordOne.concat(wordTwo));

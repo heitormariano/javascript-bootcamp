@@ -20,8 +20,8 @@ const getThingsToDoTwo = function (todos) {
     });
 };
 
-const getThingsCompleted = function (todos){
-    return todos.filter(function (todo){
+const getThingsCompleted = function (todos) {
+    return todos.filter(function (todo) {
         return todo.completed;
     });
 };

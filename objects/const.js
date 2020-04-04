@@ -8,7 +8,7 @@ console.log(isMarried);
 
 const person = {
     name: 'John',
-    age: 36
+    age: 36,
 };
 console.log(person);
 

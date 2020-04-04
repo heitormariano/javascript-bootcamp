@@ -13,7 +13,7 @@ todos.forEach(function (item, index) {
 });
 
 console.log('--------------#-----------------#-----------------#-----------------');
-todos.forEach(function (item, index){
+todos.forEach(function (item, index) {
     const num = index + 1;
     console.log(`${num}. ${item}`);
 });

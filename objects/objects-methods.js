@@ -5,7 +5,7 @@ let restaurant = {
     checkAvailability: function (partySize) {
         let seatsLeft = this.guestCapacity - this.guestCount;
         return seatsLeft >= partySize;
-    }
+    },
 };
 
 console.log(restaurant);

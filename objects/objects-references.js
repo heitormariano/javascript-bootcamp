@@ -1,7 +1,7 @@
 let myAccount = {
     name: 'Heitor Camara',
     expenses: 0,
-    income: 0
+    income: 0,
 };
 
 let addExpenses = function (account, amount) {

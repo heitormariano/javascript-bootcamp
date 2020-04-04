@@ -1,7 +1,7 @@
 let person = {
     name: 'John',
     age: 31,
-    location: 'Seattle'
+    location: 'Seattle',
 };
 
 console.log(person);

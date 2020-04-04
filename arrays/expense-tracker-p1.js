@@ -8,16 +8,15 @@ const createAccount = function (name) {
 const createExpense = function (description, amount) {
     return {
         description: description,
-        amount: amount
+        amount: amount,
     };
-}
+};
 
 const addExpense = function (account, expense) {
     if (account !== null && account !== undefined) {
         account.expenses.push(expense);
     }
-
-}
+};
 
 const calcTotalExpenses = function (account) {
     expenses = account.expenses;
@@ -28,7 +27,7 @@ const calcTotalExpenses = function (account) {
         });
     }
     return total;
-}
+};
 
 const getAccountSummary = function (account) {
     return `Total up all expenses. ${account.name} has R$${calcTotalExpenses(account)} in expenses`;

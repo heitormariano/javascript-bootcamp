@@ -1,14 +1,16 @@
-
-const notes = [{
-    title: 'My next trip',
-    body: 'I would like go to USA'
-}, {
-    title: 'Habbits to work on',
-    body: 'Exercise. Eating a bit better'
-}, {
-    title: 'Office modification',
-    body: 'Get a new seat'
-}
+const notes = [
+    {
+        title: 'My next trip',
+        body: 'I would like go to USA',
+    },
+    {
+        title: 'Habbits to work on',
+        body: 'Exercise. Eating a bit better',
+    },
+    {
+        title: 'Office modification',
+        body: 'Get a new seat',
+    },
 ];
 
 const findNote = function (notes, noteTitle) {
@@ -20,7 +22,6 @@ const findNote = function (notes, noteTitle) {
 
 let note = findNote(notes, 'My next trip');
 console.log(note);
-
 
 // using find() method
 const findNoteTwo = function (notes, noteTitle) {

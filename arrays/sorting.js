@@ -1,13 +1,17 @@
-const notes = [{
-    title: 'My next trip',
-    body: 'I would like go to USA'
-}, {
-    title: 'Habbits to work on',
-    body: 'Exercise. Eating a bit better'
-}, {
-    title: 'Office modification',
-    body: 'Get a new seat'
-}];
+const notes = [
+    {
+        title: 'My next trip',
+        body: 'I would like go to USA',
+    },
+    {
+        title: 'Habbits to work on',
+        body: 'Exercise. Eating a bit better',
+    },
+    {
+        title: 'Office modification',
+        body: 'Get a new seat',
+    },
+];
 
 const numbers = [30, 55, 100, 1, 2, 88, 4, 789];
 
@@ -16,10 +20,12 @@ const sortNotes = function (todos) {
     todos.sort(function (todo_one, todo_two) {
         if (todo_one.title.toLowerCase() < todo_two.title.toLowerCase()) {
             return -1;
-        } else if (todo_one.title.toLowerCase() > todo_two.title.toLowerCase()) {
+        } else if (
+            todo_one.title.toLowerCase() > todo_two.title.toLowerCase()
+        ) {
             return 1;
         } else {
-            return 0
+            return 0;
         }
     });
 };

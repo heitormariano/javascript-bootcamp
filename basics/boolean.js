@@ -27,7 +27,6 @@ let result04 = num02 > num01;
 console.log('Resultado 3:' + result03);
 console.log('Resultado 4:' + result04);
 
-
 let val01 = 100;
 let val02 = 200;
 

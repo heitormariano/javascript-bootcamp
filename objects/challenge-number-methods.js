@@ -7,7 +7,7 @@ let myRandomNum = function (min, max) {
 let myMakeGuess = function (guess, min, max) {
     let randomNumber = myRandomNum(min, max);
     return guess === randomNumber;
-}
+};
 
 console.log(myMakeGuess(10, 5, 12));
 console.log(myMakeGuess(10, 0, 100));

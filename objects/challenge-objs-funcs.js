@@ -8,7 +8,7 @@ let getFahrenheitToCelsius = function (fahrenheit) {
 //Converter Fahrenheit para Kelvin
 //T(K) = (T(°F) + 459.67)× 5/9
 let getFahrenheitToKenvin = function (fahrenheit) {
-    let kelvin = (fahrenheit + 459.67) * 5 / 9;
+    let kelvin = ((fahrenheit + 459.67) * 5) / 9;
     return kelvin;
 };
 
@@ -16,13 +16,15 @@ let convertFahrenheit = function (fahrenheit) {
     return {
         fahrenheit: fahrenheit,
         celsius: getFahrenheitToCelsius(fahrenheit),
-        kelvin: getFahrenheitToKenvin(fahrenheit)
+        kelvin: getFahrenheitToKenvin(fahrenheit),
     };
 };
 
 let printTemperatures = function (fahrenheit, convertTemp) {
     let temps = convertTemp(fahrenheit);
-    console.log(`The temperature ${temps.fahrenheit}°F is equivalent to ${temps.celsius}°C and ${temps.kelvin}K`);
+    console.log(
+        `The temperature ${temps.fahrenheit}°F is equivalent to ${temps.celsius}°C and ${temps.kelvin}K`
+    );
 };
 
 let fahrenheit = 74;

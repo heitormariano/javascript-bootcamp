@@ -3,16 +3,20 @@ const notes = ['Note 1', 'Note 2', 'Note 3'];
 console.log('The index: ' + notes.indexOf('Note 2'));
 console.log('The index: ' + notes.indexOf('Note 3'));
 
-const notesTwo = [{}, {
-    title: 'My next trip',
-    body: 'I would like go to USA'
-}, {
-    title: 'Habbits to work on',
-    body: 'Exercise. Eating a bit better'
-}, {
-    title: 'Office modification',
-    body: 'Get a new seat'
-}
+const notesTwo = [
+    {},
+    {
+        title: 'My next trip',
+        body: 'I would like go to USA',
+    },
+    {
+        title: 'Habbits to work on',
+        body: 'Exercise. Eating a bit better',
+    },
+    {
+        title: 'Office modification',
+        body: 'Get a new seat',
+    },
 ];
 
 console.log(`Length: ${notesTwo.length}`);

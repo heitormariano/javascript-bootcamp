@@ -21,7 +21,7 @@ let restaurant = {
         } else {
             return false;
         }
-    }
+    },
 };
 
 console.log(restaurant);
@@ -33,7 +33,6 @@ console.log(addResult ? 'Seats added' : 'Seats not added');
 let removeResult = restaurant.removeParty(20);
 // Using conditional (ternary) operator
 console.log(removeResult ? 'Seats removed' : 'Seats not removed');
-
 
 addResult = restaurant.seatParty(90);
 console.log(addResult ? 'Seats added' : 'Seats not added');

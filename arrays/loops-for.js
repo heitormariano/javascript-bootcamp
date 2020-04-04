@@ -14,7 +14,6 @@ for (let count = 0; count < notes.length; count++) {
     console.log(notes[count]);
 }
 
-
 console.log();
 for (let count = notes.length - 1; count >= 0; count--) {
     console.log(notes[count]);

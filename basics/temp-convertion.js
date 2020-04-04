@@ -15,7 +15,6 @@ tempFahrenheit = 122;
 tempCelsius = (tempFahrenheit - 32) / 1.8;
 console.log(tempFahrenheit + '°F = ' + tempCelsius + '°C');
 
-
 //Converter graus Celsius em Kelvin
 //K = C + 273
 tempCelsius = 90;
@@ -31,11 +30,11 @@ console.log(tempKelvin + 'K = ' + tempCelsius + '°C');
 //Converter Fahrenheit para Kelvin
 //T(K) = (T(°F) + 459.67)× 5/9
 tempFahrenheit = 321;
-tempKelvin = (tempFahrenheit + 459.67) * 5 / 9;
+tempKelvin = ((tempFahrenheit + 459.67) * 5) / 9;
 console.log(tempFahrenheit + '°F = ' + tempKelvin + 'K');
 
 //Converter Kelvin para Fahrenheit
 //T(°F) = T(K) × 9 / 5 - 459.67
 tempKelvin = 433.7;
-tempFahrenheit = tempKelvin * 9 / 5 - 459.67;
+tempFahrenheit = (tempKelvin * 9) / 5 - 459.67;
 console.log(tempKelvin + 'K = ' + tempFahrenheit + '°F');

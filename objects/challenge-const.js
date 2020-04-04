@@ -1,27 +1,31 @@
 // Reviewing grade-calculator variables
 
-
 //create the factory function for student objects
 const createStudent = function (name, score) {
     return {
         name: name,
-        score: score
+        score: score,
     };
 };
 
 const calcResult = function (name, score, totalScore) {
     // 90 - 100 (A), 80 - 89 (B), 70 - 79 (C), 60 - 69 (D), 0 - 59 (F)
-    const percent = score / totalScore * 100;
+    const percent = (score / totalScore) * 100;
     let result;
-    if (percent >= 90) { // A concept
+    if (percent >= 90) {
+        // A concept
         result = 'A';
-    } else if (percent >= 80) { //B concept
+    } else if (percent >= 80) {
+        //B concept
         result = 'B';
-    } else if (percent >= 70) { // C concept
+    } else if (percent >= 70) {
+        // C concept
         result = 'C';
-    } else if (percent >= 60) { // D concept
+    } else if (percent >= 60) {
+        // D concept
         result = 'D';
-    } else { //F concept
+    } else {
+        //F concept
         result = 'F';
     }
 
@@ -32,11 +36,12 @@ const getScoreByStudent = function (student, totalScore) {
     let name;
     let score;
     if (student !== undefined && student !== null) {
-        for (const prop in student) { //teste
+        for (const prop in student) {
+            //teste
             if (student.hasOwnProperty(prop)) {
-                if (typeof (student[prop]) === 'string') {
+                if (typeof student[prop] === 'string') {
                     name = student[prop];
-                } else if (typeof (student[prop]) === 'number') {
+                } else if (typeof student[prop] === 'number') {
                     score = student[prop];
                     return calcResult(name, score, totalScore);
                 }
@@ -48,7 +53,12 @@ const getScoreByStudent = function (student, totalScore) {
 };
 
 const calcScore = function (students = [], totalScore) {
-    if (students !== null && students !== undefined && totalScore !== null && totalScore !== undefined) {
+    if (
+        students !== null &&
+        students !== undefined &&
+        totalScore !== null &&
+        totalScore !== undefined
+    ) {
         if (students.length !== 0 && totalScore !== 0) {
             for (const elem of students) {
                 console.log(getScoreByStudent(elem, totalScore));

@@ -5,8 +5,8 @@ let createAccount = function (name) {
         expenses: 0,
         balance: function () {
             return this.income - this.expenses;
-        }
-    }
+        },
+    };
     return account;
 };
 
@@ -24,7 +24,9 @@ let resetAccount = function (account) {
 };
 
 let getAccountSummary = function (account) {
-    return `Account for ${account.name} has R$${account.balance()}. R$${account.income} in income. R$${account.expenses} in expenses.`;
+    return `Account for ${account.name} has R$${account.balance()}. R$${
+        account.income
+    } in income. R$${account.expenses} in expenses.`;
 };
 
 // creating some objects

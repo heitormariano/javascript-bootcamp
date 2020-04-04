@@ -19,7 +19,4 @@ console.log(num07);
 
 let age = 36;
 let dogYears = (age + 1) / 7;
-console.log("Dog years: " + dogYears);
-
-
-
+console.log('Dog years: ' + dogYears);

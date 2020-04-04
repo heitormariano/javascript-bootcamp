@@ -24,7 +24,6 @@ fahrenheitTemp = 32;
 celsiusTemp = convertFahrenheitToCelsius(fahrenheitTemp);
 printFahrenheitToCelsius(fahrenheitTemp, celsiusTemp);
 
-
 fahrenheitTemp = 68;
 celsiusTemp = convertFahrenheitToCelsius(fahrenheitTemp);
 printFahrenheitToCelsius(fahrenheitTemp, celsiusTemp);
