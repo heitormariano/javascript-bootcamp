@@ -72,4 +72,5 @@ const studentsList = [marcos, andrea, mateus, maria];
 
 //calculate the score for each student (the total score needs to be defined)
 // Total score = 20
+
 calcScore(studentsList, 20);

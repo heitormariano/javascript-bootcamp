@@ -49,5 +49,3 @@ addExpense(heitor, coffe);
 addExpense(heitor, food);
 addExpense(heitor, gym);
 addExpense(heitor, trips);
-
-console.log(getAccountSummary(heitor));

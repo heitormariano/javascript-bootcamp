@@ -16,4 +16,3 @@ console.log('---- for loop -----');
 for (let i = 0; i < 20; i++) {
     console.log(myMakeGuess(12, 5, 20));
 }
-console.log('------- end -------');

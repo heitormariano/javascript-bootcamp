@@ -1,3 +1,4 @@
+
 const notes = [{
     title: 'My next trip',
     body: 'I would like go to USA'
@@ -34,4 +35,3 @@ console.log(note);
 
 note = findNoteTwo(notes, 'Other title');
 console.log(note);
-

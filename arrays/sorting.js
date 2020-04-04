@@ -37,4 +37,3 @@ console.log(notes);
 
 console.log('Using sortNumbers method');
 sortNumbers(numbers);
-console.log(numbers);

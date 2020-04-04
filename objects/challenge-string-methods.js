@@ -22,4 +22,3 @@ passwordThree = '456passwordABCD';
 // testing the isValidPassword method
 console.log(isValidPassword(passwordOne)); // false
 console.log(isValidPassword(passwordTwo)); // true
-console.log(isValidPassword(passwordThree)); // false

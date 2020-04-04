@@ -31,4 +31,3 @@ const index = notesTwo.findIndex(function (note) {
 });
 
 console.log(`Index value: ${index}`); // 2
-

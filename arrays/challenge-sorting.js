@@ -21,4 +21,3 @@ const sortTodos = function (todos) {
 };
 
 sortTodos(todos);
-console.log(todos);

@@ -33,4 +33,3 @@ console.log('Things to Do - V2:');
 console.log(getThingsToDoTwo(todos));
 
 console.log('Things Completed:');
-console.log(getThingsCompleted(todos));
