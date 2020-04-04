@@ -20,9 +20,7 @@ const sortNotes = function (todos) {
     todos.sort(function (todo_one, todo_two) {
         if (todo_one.title.toLowerCase() < todo_two.title.toLowerCase()) {
             return -1;
-        } else if (
-            todo_one.title.toLowerCase() > todo_two.title.toLowerCase()
-        ) {
+        } else if (todo_one.title.toLowerCase() > todo_two.title.toLowerCase()) {
             return 1;
         } else {
             return 0;
