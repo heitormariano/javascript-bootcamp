@@ -2,7 +2,7 @@ let isImportant = true;
 console.log('Resultado: ' + isImportant);
 
 let temp = 34;
-let isFreezing = temp <= 28;
+let isFreezing = temp <= 26;
 console.log('Está frio? ' + isFreezing);
 
 let firstName = 'Heitor';
