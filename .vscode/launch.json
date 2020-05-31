@@ -24,8 +24,13 @@
             "type": "firefox",
             "request": "launch",
             "reAttach": true,
-            "url": "http://localhost:8080/${relativeFile}",
-            "webRoot": "${workspaceFolder}"
+            "url": "http://localhost:5500/${relativeFile}",
+            "pathMappings": [
+                {
+                    "url": "http://localhost:5500",
+                    "path": "${workspaceFolder}"
+                }
+            ]
         }
     ]
 }
